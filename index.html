@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KAI NAKAMURA // PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- CRT overlay effects -->
+  <div class="crt-scanlines" aria-hidden="true"></div>
+  <div class="crt-flicker" aria-hidden="true"></div>
+  <div class="crt-vignette" aria-hidden="true"></div>
+
+  <div class="screen">
+
+    <!-- ── BOOT SEQUENCE ── -->
+    <div class="boot" id="boot">
+      <div class="boot-lines" id="bootLines"></div>
+      <button class="skip-btn" id="skipBoot">[ PRESS ENTER TO SKIP ]</button>
+    </div>
+
+    <!-- ── MAIN TERMINAL ── -->
+    <main class="terminal" id="terminal" hidden>
+
+      <!-- Topbar -->
+      <div class="topbar">    
+        <span class="tb-left">Mark_OS v2.6.1 // PORTFOLIO SYSTEM</span>
+        <span class="tb-mid" id="tb-time"></span>
+        <span class="tb-right">[ <span class="blink">■</span> ONLINE ]</span>
+      </div>
+
+      <!-- Nav -->
+      <nav class="t-nav">
+        <span class="prompt-char">$</span>
+        <button class="nav-cmd active" data-section="home">./home</button>
+        <button class="nav-cmd" data-section="work">./work</button>
+        <button class="nav-cmd" data-section="about">./about</button>
+        <button class="nav-cmd" data-section="contact">./contact</button>
+      </nav>
+
+      <!-- ── HOME ── -->
+      <section class="t-section active" id="s-home">
+        <div class="ascii-art" id="asciiArt"></div>
+        <div class="home-info">
+          <p class="typewriter" id="tw1"></p>
+          <p class="typewriter" id="tw2"></p>
+          <p class="typewriter" id="tw3"></p>
+          <p class="typewriter dim" id="tw4"></p>
+        </div>
+        <div class="home-stats">
+        </div>
+      </section>
+
+      <!-- ── WORK ── -->
+      <section class="t-section" id="s-work" hidden>
+        <div class="section-header">
+          <span class="sh-line">══════════════════════════════════════════════</span>
+          <span class="sh-title">DIRECTORY: /projects</span>
+          <span class="sh-line">══════════════════════════════════════════════</span>
+        </div>
+
+        <div class="project-list">
+
+          <div class="proj-entry">
+            <div class="proj-top">
+              <span class="proj-id">[001]</span>
+              <span class="proj-name">Spes Applicant 2025</span>
+              <span class="proj-status ok">● LIVE</span>
+            </div>
+            <div class="proj-detail">
+              <span class="proj-desc">Appliying summer job in PESO capitol in 2025, assign in Municipal in bansalan. My work in incoder.</span>
+            </div>
+          </div>
+
+          <div class="proj-entry">
+            <div class="proj-top">
+              <span class="proj-id">[002]</span>
+              <span class="proj-name">Spes Applicant 2026</span>
+              <span class="proj-status ok">● LIVE</span>
+            </div>
+            <div class="proj-detail">
+              <span class="proj-desc">Appliying summer job in PESO capitol in 2026, assign in Peso Magsaysay, Davao Del Sur. My work in incoder and Assistant.</span>
+            </div>
+          <div class="proj-entry">
+            <div class="proj-top">
+              <span class="proj-id">[003]</span>
+              <span class="proj-name">Aruino Project 2026</span>
+              <span class="proj-status ok">● LIVE</span>
+            </div>
+            <div class="proj-detail">
+              <span class="proj-desc">Building a IOT Smart Door Lock for our final project in Applications Development & Emerging Technologies.</span>
+            </div>
+          </div>
+
+          <div class="proj-entry">
+            <div class="proj-top">
+              <span class="proj-id">[004]</span>
+              <span class="proj-name">Ardiono Project 2025</span>
+              <span class="proj-status warn">● LIVE</span>
+            </div>
+            <div class="proj-detail">
+              <span class="proj-desc">Building a IOT Auotomatic Obstacle Avoiding Car for our final project Sir Aidan.</span>
+            </div>
+        </div>
+
+        <div class="proj-entry">
+            <div class="proj-top">
+              <span class="proj-id">[005]</span>
+              <span class="proj-name">Jollibee employe 2022</span>
+              <span class="proj-status warn">● LIVE</span>
+            </div>
+            <div class="proj-detail">
+              <span class="proj-desc">I'm working in jollibee for 5 months in 2022. I worked because I'm going to start my ccollege life, therefore i'm saving money so I can have my allowance.</span>
+            </div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ── -->
+      <section class="t-section" id="s-about" hidden>
+        <div class="section-header">
+          <span class="sh-line">══════════════════════════════════════════════</span>
+          <span class="sh-title">FILE: /about/README.txt</span>
+          <span class="sh-line">══════════════════════════════════════════════</span>
+        </div>
+        <div class="about-body">
+          <div class="about-left">
+            <pre class="about-card">
+┌─────────────────────────┐
+│  USER PROFILE           │
+├─────────────────────────┤
+│  NAME  : Mark Torres    │
+│  Age   : 21             |
+|  ROLE  : 3rdyr Student  |
+│  LOC   : Bansalan, DDS  │
+├─────────────────────────┤
+│  Hobbies                │
+│  > Editing     ████████ │
+│  > Workout     ██████░░ │
+│  > Adventure   ████░░░░ │
+│  > Driving     ███████░ │
+├─────────────────────────┤
+│  CONTACT                │
+│  Marktorres906@gmail.com│
+└─────────────────────────┘</pre>
+          </div>
+          <div class="about-right">
+            <p class="ab-line"><span class="ab-key">BACKGROUND:</span></p>
+            <p class="ab-text">I am 3rd-year Student in St. Mary's College of Bansalan taking in Bachelor of Science in Information Technology. In my Family we have 2 childrens I am the eldest, and I have a sister. My goal is to finish my school therefore to help my family going to rich.</p>
+
+            <p class="ab-line mt"><span class="ab-key">PHILOSOPHY:</span></p>
+            <p class="ab-text">The future belongs to those who believe in the beuty of their dreams.</p>
+
+            <p class="ab-line mt"><span class="ab-key">WHEN NOT IN SCHOOL:</span></p>
+            <p class="ab-text">Going to the Bukid to help my mother in planting vegetables and fruits.</p>
+
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section class="t-section" id="s-contact" hidden>
+        <div class="section-header">
+          <span class="sh-line">══════════════════════════════════════════════</span>
+          <span class="sh-title">INIT: ./contact_protocol</span>
+          <span class="sh-line">══════════════════════════════════════════════</span>
+        </div>
+        <div class="contact-body">
+          <p class="ct-intro">READY TO ESTABLISH CONNECTION.<br/>SEND SIGNAL THROUGH ANY CHANNEL BELOW.</p>
+
+          <div class="channels">
+            <a href="mailto:kai@example.com" class="channel">
+              <span class="ch-icon">✉</span>
+              <span class="ch-label">EMAIL</span>
+              <span class="ch-val">Marklouintorres@smcbi.edu.ph</span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="#" class="channel">
+              <span class="ch-icon">◈</span>
+              <span class="ch-label">Facebook</span>
+              <span class="ch-val">https://www.facebook.com/mark.louin.torres</span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="#" class="channel">
+              <span class="ch-icon">▣</span>
+              <span class="ch-label">Telegram</span>
+              <span class="ch-val">09462130983</span>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="#" class="channel">
+              <span class="ch-icon">◉</span>
+              <span class="ch-label">Instagram</span>
+              <span class="ch-val">https://www.instagram.com/makeyy_bonz/</span>
+              <span class="ch-arrow">→</span>
+            </a>
+          </div>
+
+          <!-- Fake command line -->
+          <div class="cmd-line-wrap">
+            <span class="prompt-char">$</span>
+            <input type="text" class="cmd-input" id="cmdInput" placeholder="type a message and hit enter..." autocomplete="off" spellcheck="false"/>
+          </div>
+          <div class="cmd-output" id="cmdOutput"></div>
+        </div>
+      </section>
+
+      <!-- Bottom bar -->
+      <div class="bottombar">
+        <span>[ F1: HOME ] [ F2: WORK ] [ F3: ABOUT ] [ F4: CONTACT ]</span>
+        <span id="bb-status">STATUS: IDLE</span>
+      </div>
+
+    </main>
+
+  </div><!-- /screen -->
+
+  <script src="script.js"></script>
+</body>
+</html>
